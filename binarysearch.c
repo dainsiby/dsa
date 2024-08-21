@@ -49,7 +49,7 @@ c++;
  }
 }
 c++;
-while(l>r)
+if(l>r)
 {
 c++;
 printf("The no is not found");
