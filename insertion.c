@@ -1,30 +1,60 @@
 #include<stdio.h>
 void main()
 {
-int temp,n,i,j,a[100],min;
-printf("enter number of elements");
+int i=0,j,n,small,c=0,a[100],temp;
+c=c+2;
+printf("Enter the no. of elements");
+c++;
 scanf("%d",&n);
-printf("enter the elements:");
+c++;
+printf("Enter the elements");
+c++;
+c++;
 for(i=0;i<n;i++)
 {
-scanf("%d" , &a[i]);
+c++;
+scanf("%d",&a[i]);
+c++;
 }
-for(i=0;i<n;i++)
+c++;
+for(i=0;i<n-1;i++)
+{
+c++;
+small=i;
+c++;
+c++;
+for(j=i+1;j<n;j++)
+{
+c++;
+c++;
+if(a[j]<a[small])
+{
+c++;
+small=j;
+}
+}
+c++;
+if(small!=i)
 {
 temp=a[i];
-j=i-1;
-while(j>0 && a[j]>temp)
-{
-a[j+1]=a[i];
-j--;
+c++;
+a[i]=a[small];
+c++;
+a[small]=temp;
+c++;
 }
-a[j+1]=temp;
 }
-printf("sorted list\n");
-for(i=0;i<
-n;i++)
+printf("sorted List is:\n");
+c++;
+c++;
+for(i=0;i<n;i++)
 {
-printf("%d\t",a[i]);
+c++;
+printf("%d \t",a[i]);
+c++;
 }
 printf("\n");
-}
+printf("\nThe space complexity is %d",(5*4)+(n*4));
+ c++;
+ printf("\nThe time complexity is %d",c++);
+ }
