@@ -24,8 +24,7 @@ void main()
         c++;
         j=i-1;
         c++;
-    
-     c++;
+        c++;
      while(j>=0 && a[j]>temp) 
       {
       		c++;
@@ -33,8 +32,7 @@ void main()
           c++;
     	  j--;
       }
-   
-      a[j+1]=temp;
+    a[j+1]=temp;
       c++;
     }
     printf("Sorted array:\n");
@@ -52,3 +50,4 @@ printf("\nThe space complexity is %d",(5*4)+(n*4));
  c++;
  printf("\nThe time complexity is %d",c++);
  }
+
